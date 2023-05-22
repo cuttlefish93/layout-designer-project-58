@@ -96,7 +96,7 @@ body {
 }
 
 .header__description-text {
-  width: 50%;
+  width: calc(100% / 2 - 15px);
 }
 
 .header__description-paragraph {
@@ -115,7 +115,10 @@ body {
   text-transform: uppercase;
   padding: 12px 24px;
   margin-top: 40px;
-  margin-left: 570px;
+  margin-left: calc(100% / 2 + 15px);
+  position: relative;
+  z-index: 1;
+  transition: all 0.5s ease;
 }
 
 .header__link:hover {
@@ -249,6 +252,11 @@ body {
 .distortion__item {
   display: flex;
   flex-wrap: wrap;
+}
+
+.distortion__item-img {
+  position: relative;
+  z-index: 1;
 }
 
 .distortion__description {
