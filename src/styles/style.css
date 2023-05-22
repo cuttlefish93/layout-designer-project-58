@@ -177,6 +177,23 @@ body {
   width: 350px;
   background-color: #f5f4f0;
   padding: 24px;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav__link:hover {
+  background-color: #fe8a02;
+}
+
+.nav__link:hover .nav__link-num {
+  color: #fff;
+}
+
+.nav__link:hover .nav__link-title {
+  color: #fff;
+}
+
+.nav__link:hover .nav__link-text {
+  color: #fff;
 }
 
 .nav__link-num {
@@ -186,6 +203,7 @@ body {
   font-size: 64px;
   line-height: 1em;
   margin-bottom: 40px;
+  transition: all 0.5s ease;
 }
 
 .nav__link-title {
@@ -194,11 +212,13 @@ body {
   font-weight: 400;
   color: #fe8a02;
   margin-bottom: 16px;
+  transition: all 0.5s ease;
 }
 
 .nav__link-text {
   margin: 0;
   color: #2a2626;
+  transition: all 0.5s ease;
 }
 
 /** Section distortion **/
@@ -295,4 +315,122 @@ body {
 
 .distortion_theme_black .distortion__item-text {
   order: 4;
+}
+
+/** FOOTER **/
+.footer {
+  padding: 100px 0;
+}
+
+.updates {
+  background-color: #42413c;
+  padding: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.updates__title {
+  font-family: "Neucha", cursive;
+  font-size: 34px;
+  font-weight: 400;
+  color: #fff;
+  width: 45%;
+}
+
+.updates__form {
+  width: 45%;
+}
+
+.updates__form-title {
+  font-size: 18px;
+  color: #fff;
+  margin: 0 0 9px;
+}
+
+.updates__form-row {
+  position: relative;
+}
+
+.updates__form-input {
+  display: inline-block;
+  border: 1px solid #e3e3e3;
+  width: 100%;
+  height: 50px;
+  padding: 15px 80px 15px 15px;
+  color: #42413c;
+}
+
+.updates__form-input::placeholder {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #757575;
+  opacity: 0.2;
+}
+
+.updates__form-btn {
+  padding: 0;
+  border: none;
+  background-color: #fe8a02;
+  cursor: pointer;
+  width: 70px;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all 0.5s ease;
+}
+
+.updates__form-btn:hover {
+  background-color: #ea7600;
+}
+
+.updates__form-btn::before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/send.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.updates__form-terms {
+  margin: 0;
+  font-size: 12px;
+  color: #fff;
+}
+
+.updates__form-terms-link {
+  text-decoration: underline;
+}
+
+.footer__copyright {
+  text-align: center;
+  margin: 60px 0 16px;
+  font-size: 14px;
+  color: #000000;
+}
+
+.footer__source {
+  text-align: center;
+  font-size: 14px;
+  color: #000000;
+  margin: 0 0 16px;
+}
+
+.footer__source-link {
+  color: #007dc1;
+  text-decoration: underline;
+}
+
+.footer__author-link {
+  display: block;
+  color: #1085c5;
+  font-size: 14px;
+  text-decoration: underline;
+  text-align: center;
 }
