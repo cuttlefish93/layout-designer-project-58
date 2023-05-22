@@ -2,10 +2,6 @@
   "name": "layout-designer-project-58",
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/cuttlefish93/layout-designer-project-58/workflows/hexlet-check/badge.svg)](https://github.com/cuttlefish93/layout-designer-project-58/actions)",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "Kamila Begimkulova",
   "license": "ISC",
   "devDependencies": {
