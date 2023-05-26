@@ -23,6 +23,26 @@
   box-sizing: border-box;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Neucha", cursive;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 34px;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -36,18 +56,28 @@ body {
   margin: 0 auto;
 }
 
-.title {
+.m-0 {
   margin: 0;
-  line-height: 1.2em;
 }
 
 .title-theme-orange {
   color: #fe8a02;
 }
 
+.subtitle {
+  font-family: "Neucha", cursive;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2em;
+}
+
 .link {
   color: inherit;
   text-decoration: none;
+}
+
+.pos-relative {
+  position: relative;
 }
 
 /** HEADER **/
@@ -76,31 +106,24 @@ body {
 }
 
 .header-title {
-  font-family: "Neucha", cursive;
-  font-size: 72px;
-  font-weight: 400;
   color: #2a2626;
 }
 
 .header-img {
   position: absolute;
   height: 525px;
-  top: 55px;
-  right: -270px;
+  top: -45px;
+  left: 296px;
 }
 
 .header-description {
-  margin-top: 185px;
+  margin-top: 200px;
   display: flex;
   gap: 30px;
 }
 
 .header-description-text {
   width: calc(100% / 2 - 15px);
-}
-
-.header-description-paragraph {
-  margin: 0;
 }
 
 .header-description-paragraph:nth-of-type(even) {
@@ -136,9 +159,6 @@ body {
 }
 
 .explain-distortions-title {
-  font-family: "Neucha", cursive;
-  font-weight: 400;
-  font-size: 60px;
   color: #2a2626;
   margin-bottom: 30px;
 }
@@ -168,9 +188,7 @@ body {
 }
 
 .nav-title {
-  font-family: "Neucha", cursive;
   font-size: 52px;
-  font-weight: 400;
   color: #fff;
   width: 350px;
 }
@@ -194,16 +212,11 @@ body {
 }
 
 .nav-link-title {
-  font-family: "Neucha", cursive;
-  font-size: 34px;
-  font-weight: 400;
-  color: #fe8a02;
   margin-bottom: 16px;
   transition: all 0.5s ease;
 }
 
 .nav-link-text {
-  margin: 0;
   color: #2a2626;
   transition: all 0.5s ease;
 }
@@ -260,33 +273,26 @@ body {
 }
 
 .distortion-description {
-  font-family: "Neucha", cursive;
   width: calc(100% - 578px - 30px);
   margin-left: 30px;
 }
 
 .distortion-description-header {
-  font-size: 24px;
   color: var(--second-text-color);
-  margin: 0;
 }
 
 .distortion-description-title {
-  font-size: 60px;
-  font-weight: 400;
   color: var(--main-text-color);
   margin-bottom: 30px;
 }
 
 .distortion-description-text {
-  font-size: 34px;
   color: var(--main-text-color);
-  margin: 0;
-  line-height: 1.2em;
 }
 
 .distortion-item-title {
   background-color: var(--second-bg-color);
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 700;
   color: var(--third-text-color);
@@ -298,12 +304,16 @@ body {
 
 .distortion-item-text {
   color: var(--main-text-color);
-  margin: 0;
   width: calc(100% / 2 - 15px);
 }
 
 .distortion-item-text:nth-of-type(odd) {
   margin-right: 30px;
+}
+
+.distortion-item-divider {
+  display: block;
+  margin-bottom: 20px;
 }
 
 /* change styles when theme is black */
@@ -339,9 +349,6 @@ body {
 }
 
 .updates-title {
-  font-family: "Neucha", cursive;
-  font-size: 34px;
-  font-weight: 400;
   color: #fff;
   width: 45%;
 }
@@ -407,7 +414,6 @@ body {
 }
 
 .updates-form-terms {
-  margin: 0;
   font-size: 12px;
   color: #fff;
 }
