@@ -2,6 +2,6 @@
 
 [![Actions Status](https://github.com/cuttlefish93/layout-designer-project-58/workflows/hexlet-check/badge.svg)](https://github.com/cuttlefish93/layout-designer-project-58/actions)
 
-### Publication on surge
+### Publication
 
-amusing-stem.surge.sh
+[Surge](amusing-stem.surge.sh)
